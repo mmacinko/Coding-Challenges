@@ -20,6 +20,8 @@ body {
     background-color: var(--clr-light-gray);
     font-family: var(--font-familiy);
     display: flex;
+    flex-direction: column;
+    gap: 3rem;
     justify-content: center;
     align-items: center;
     margin: 0;
@@ -51,3 +53,6 @@ body {
     color: var(--clr-grayish-blue);
     padding-bottom: 0.6rem;
 }
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
