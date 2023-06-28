@@ -1,0 +1,117 @@
+@import url('https://api.fonts.coollabs.io/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap');
+
+:root {
+    --clr-light-red: hsl(0, 100%, 67%);
+    --clr-orangey-yellow: hsl(39, 100%, 56%);
+    --clr-green-teal: hsl(166, 100%, 37%);
+    --clr-cobalt-blue: hsl(234, 85%, 45%);
+
+    --clr-light-slate-blue: hsl(252, 100%, 67%);
+    --clr-light-royal-blue: hsl(241, 81%, 54%);
+    --clr-violet-blue: hsla(256, 72%, 46%, 1);
+    --clr-persian-blue: hsla(241, 72%, 46%, 0);
+
+    --clr-white: hsl(0, 0%, 100%);
+    --clr-pale-blue: hsl(221, 100%, 96%);
+    --clr-light-lavender: hsl(241, 100%, 89%);
+    --clr-dark-gray-blue: hsl(224, 30%, 27%);
+
+    --body-font-family: 'Hanken Grotesk', sans-serif;
+    --body-font-size: 18px;
+
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: var(--body-font-size);
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    font-family: var(--body-font-family);
+}
+
+/* body::before {
+    position: absolute;
+    content: '';
+    inset: 0;
+    opacity: .3;
+    background-image: url(design/desktop-design.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    pointer-events: none;
+} */
+
+.card {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 1fr;
+    width: 620px;
+}
+
+.card main {
+    text-align: center;
+    background-image: linear-gradient(0, var(--clr-light-royal-blue), var(--clr-light-slate-blue));
+    color: var(--clr-pale-blue);
+    padding-inline: 2rem;
+    border-radius: 1.2rem;
+}
+
+.card main h2 {
+    margin-block: 1.8rem;
+    font-size: 1.2rem;
+    line-height: 1rem;
+}
+
+.card .circle {
+    background-image: linear-gradient(0, var(--clr-persian-blue), var(--clr-violet-blue));
+    border-radius: 50%;
+    width: 10.5rem;
+    height: 10.5rem;
+    margin-inline: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.card .circle .big {
+    font-size: 3.5rem;
+    font-weight: 800;
+    line-height: 3.5rem;
+    color: var(--clr-white);
+}
+
+.card .circle .small {
+    font-size: 1rem;
+    color: var(--clr-light-lavender);
+}
+
+.card main h3 {
+    font-size: 1.5rem;
+    margin-top: 0.7rem;
+    margin-bottom: 0;
+    color: var(--clr-white);
+}
+
+.card aside {
+    padding: 1rem;
+}
+
+.card aside button {
+    text-align: center;
+}
+
+.attribution { font-size: 11px; text-align: center; margin-top: 1rem; }
+.attribution a { color: hsl(228, 45%, 44%); }
